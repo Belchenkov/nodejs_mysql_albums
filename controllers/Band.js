@@ -12,7 +12,9 @@ exports.create = (req, res) => {
 
 // List Bands
 exports.list = (req, res) => {
-    models.Band.findAll().then(bands => {
+    models.Band.findAll({
+        order: [['createdAt', 'DESC']]
+    }).then(bands => {
         //res.json(bands);
         // Render result
         res.render('band-list', {
