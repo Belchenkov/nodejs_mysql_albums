@@ -13,7 +13,7 @@
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
     "mysql2": "^2.1.0",
-    "sequelize": "^5.21.6",
+    "sequelize": "^5.22.5",
     "swig": "^1.4.2"
   },
   "devDependencies": {
